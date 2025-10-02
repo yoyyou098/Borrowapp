@@ -1,0 +1,7 @@
+{
+  "name": "Sports Equipment Borrowing System",
+  "description": "A comprehensive system for students and administrators to manage borrowing and returning sports equipment. Features user authentication, equipment tracking, history, statistics, and administrative controls for app customization.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

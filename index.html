@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports Equipment Borrowing System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    :root {
+      --bg-primary: #7C3AED;
+      --bg-primary-dark: #5B21B6;
+      --text-primary: #FFFFFF;
+    }
+    .fade-in { animation: fadeIn .35s ease-out both; }
+    @keyframes fadeIn { from { opacity:0; transform: translateY(10px)} to {opacity:1; transform:none} }
+    .slide-up { animation: slideUp .3s ease-out both; }
+    @keyframes slideUp { from { transform: translateY(20px); opacity:0 } to { transform:none; opacity:1 } }
+    
+    .toast {
+      position: fixed;
+      right: 1rem;
+      top: 1rem;
+      z-index: 100;
+      transform: translateX(120%);
+      transition: transform .3s ease;
+    }
+    .toast.show {
+      transform: translateX(0);
+    }
+    
+    /* Dynamic color classes override */
+    .bg-primary { background-color: var(--bg-primary) !important; }
+    .hover\\:bg-primary-dark:hover { background-color: var(--bg-primary-dark) !important; }
+    .text-primary-app { color: var(--bg-primary) !important; }
+    .hover\\:text-primary-dark-app:hover { color: var(--bg-primary-dark) !important; }
+    .border-primary { border-color: var(--bg-primary) !important; }
+    .ring-primary { --tw-ring-color: var(--bg-primary) !important; }
+    .focus\\:ring-primary:focus { --tw-ring-color: var(--bg-primary) !important; }
+    .bg-gradient-to-br-app { background: linear-gradient(to bottom right, var(--bg-primary), var(--bg-primary-dark)) !important; }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+<body class="min-h-screen bg-gray-100">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
